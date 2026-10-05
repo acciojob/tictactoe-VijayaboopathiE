@@ -1,1 +1,68 @@
 /*  your css code here. If applicable */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#player-section input {
+    display: block;
+    width: 300px;
+    padding: 12px;
+    margin: 15px auto;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#submit {
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#game-section {
+    display: none;
+}
+
+.message {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.board {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+
+    font-size: 50px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f2f2f2;
+}
